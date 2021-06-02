@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>HYENA👽</title>
+</head>
+<body>
+    <div class="greeting_page">
+        <span id="greeting">
+        </span>
+    </div>
+    <div class='background-me'>
+        <img src="image/me.jpg">
+    </div>
+
+
+     
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+     
+    <script>
+        var typing = document.getElementById('greeting');
+     
+        var typewriter = new Typewriter(typing, {
+         loop: true
+        });
+      
+        typewriter.typeString('Hi :) Im YeaNa.')
+            .pauseFor(1500)
+            .deleteAll()
+            .typeString('Welcome to my page.')
+            .pauseFor(1500)
+            .deleteAll()
+            .typeString('Click the button below')
+            .pauseFor(9000)
+            .start()
+    </script>
+ 
+</body>
+</html>

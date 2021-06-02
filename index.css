@@ -1,0 +1,29 @@
+body{
+    font-family: 'Righteous';
+    background-color: black;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+.background-me{
+    background-color: black;
+    position:absolute;
+    top:-110px;
+    z-index: -1;
+    animation: fadeIn 0.9s linear;
+    opacity: 0.45;
+}
+.background-me img{
+    width: 100%;
+}
+.greeting_page{
+    text-align: center;
+    padding-top:200px;
+}
+
+.typewriter-wrapper,.typewriter-cursor{
+    color: white;
+    text-shadow: 2px 2px 2px #0f0f0f;
+    font-size: 100px;
+    font-weight: 800;
+}
