@@ -11,7 +11,7 @@ body{
     top:-110px;
     z-index: -1;
     animation: fadeIn 0.9s linear;
-    opacity: 0.45;
+    opacity: 0.33;
 }
 .background-me img{
     width: 100%;
@@ -22,8 +22,68 @@ body{
 }
 
 .typewriter-wrapper,.typewriter-cursor{
-    color: white;
-    text-shadow: 2px 2px 2px #0f0f0f;
+    color: rgb(0, 255, 106);
+    text-shadow: 3px 3px #000000;
     font-size: 100px;
     font-weight: 800;
 }
+
+.menu{
+    width:80%;
+    display: flex;
+    margin-left:10%;
+}
+.menu a{
+    flex:1;
+    text-align: center;
+    margin-top:100px;
+}
+
+button {
+    z-index: 1;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    font-size: 1.2em;
+    width:160px;
+    height:60px;
+    color: #ffffff;
+    border: solid 4px white;
+    box-shadow: 12px 12px 0  -5px rgb(0, 255, 106);
+    transition: .55s;
+    overflow: hidden;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+  }
+  
+  button:before {
+    display: inline-block;
+    transition: bottom, 0.55s;
+    position: absolute;
+    transform: skew(0deg);
+    top: 0px;
+    left: 260px;
+    background-color: rgb(0, 255, 106);
+    content: "　";
+    width: 223px;
+    height: 200px;
+    z-index: -1;
+  }
+  
+  button:hover {
+      
+     box-shadow: 0px 0px 0  0px rgb(0, 255, 106);
+     color:black;
+     font-size: 1.2em;
+     font-weight: 900;
+     cursor:pointer;
+     border:rgb(0, 255, 106);
+     transition: .35s;
+
+  }
+  
+  button:hover:before {
+    top: -40px;
+    left: -40px;
+  }
