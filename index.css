@@ -97,3 +97,89 @@ button {
     top: -40px;
     left: -40px;
   }
+
+@media screen and (max-width: 768px) {
+
+    .background-me img{
+        display: none;
+    }
+    
+    .greeting_page{
+        text-align: center;
+        padding-top:20px;
+    }
+    
+    .typewriter-wrapper,.typewriter-cursor{
+        color: rgb(0, 255, 106);
+        text-shadow: 3px 3px #000000;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    
+    .menu{
+        width:98%;
+        margin-left:1%;
+        height:80%;
+        position:absolute;
+        display: block;
+        bottom:10px;
+        
+    }
+    .menu a{
+       
+        text-align: center;
+        margin-top:40px;
+        display: block;
+
+    }
+    
+    button {
+        z-index: 1;
+        background-color: transparent;
+        position: relative;
+        display: inline-block;
+        font-size: 0.6em;
+        width:100px;
+        height:40px;
+        color: #ffffff;
+        border: solid 4px white;
+        box-shadow: 8px 8px 0  -5px rgb(0, 255, 106);
+        transition: .55s;
+        overflow: hidden;
+        letter-spacing: 1px;
+        font-weight: 600;
+        padding:0;
+    
+      }
+      
+      button:before {
+        display: inline-block;
+        transition: bottom, 0.55s;
+        position: absolute;
+        transform: skew(0deg);
+        top: 0px;
+        left: 100px;
+        background-color: rgb(0, 255, 106);
+        content: "　";
+        width: 203px;
+        height: 100px;
+        z-index: -1;
+      }
+      
+      button:hover {
+          
+         box-shadow: 0px 0px 0  0px rgb(0, 255, 106);
+         color:black;
+         font-size: 0.6em;
+         font-weight: 900;
+         cursor:pointer;
+         border:rgb(0, 255, 106);
+         transition: .35s;
+    
+      }
+      
+      button:hover:before {
+        top: -40px;
+        left: -40px;
+      }
+}
